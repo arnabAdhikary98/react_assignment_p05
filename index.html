@@ -17,7 +17,7 @@
 <script type="text/babel">
 
 
-
+// created a component and used conditional rendering
 function ItemList({item}){
     return (
         item.map(function(ele, i){
@@ -31,8 +31,10 @@ function ItemList({item}){
     )
 }
 
+// an array consisting of strings 
 const items = ["Apple", "Banana", "","Cherry",""]
 
+//making a list using component and used React.fragment 
 let list = (
     <>
     <ul>
@@ -43,6 +45,7 @@ let list = (
 
 let rootEle = document.querySelector('#root')
 
+//rendering it to the ReactDOM
 ReactDOM.createRoot(rootEle).render(list)
 
 </script>
